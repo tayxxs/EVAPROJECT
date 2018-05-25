@@ -1,0 +1,3 @@
+rootProject.name = 'EVAPROJECT'
+include "server"
+include "web"

@@ -1,6 +1,9 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
+    <h1>这里相当于是index页面</h1>
+    <router-link to="/LDCat">Go to LDCat</router-link>
+    <router-link to="/Wallace">Go to Wallace</router-link>
+    <router-link to="/YeRenXiao">Go to YeRenXiao</router-link>
     <router-view/>
   </div>
 </template>

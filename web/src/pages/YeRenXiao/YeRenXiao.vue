@@ -1,13 +1,18 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
-    <router-view/>
+    <h1>wq首页</h1>
+    <!-- <router-link to="/LDCat">Go to LDCat</router-link>
+    <router-link to="/Wallace">Go to Wallace</router-link>
+    <router-link to="/YeRenXiao">Go to YeRenXiao</router-link>
+    <router-view/> -->
   </div>
 </template>
 
 <script>
 export default {
-  name: 'App'
+  name: 'YeRenXiao',
+  methods: {
+  }
 }
 </script>
 

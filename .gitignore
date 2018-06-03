@@ -27,3 +27,4 @@
 /.nb-gradle/
 /build.gradle.bak
 /.gitignore
+.vscode/launch.json

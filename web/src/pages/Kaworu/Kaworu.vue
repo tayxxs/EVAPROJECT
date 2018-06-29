@@ -1,28 +1,37 @@
 <template>
   <div id="app">
-    <h1>whg首页</h1>
-    <!-- <router-link to="/LDCat">Go to LDCat</router-link>
-    <router-link to="/Wallace">Go to Wallace</router-link>
-    <router-link to="/YeRenXiao">Go to YeRenXiao</router-link>
-    <router-view/> -->
+    <header-component></header-component>
+    <router-view></router-view>
+    <copyright-component></copyright-component>
   </div>
 </template>
 
 <script>
+import componentHeader from '@/components/Header'
+import componentCopyright from '@/components/Copyright'
+
 export default {
   name: 'Kaworu',
+  components: {
+    'header-component': componentHeader,
+    'copyright-component': componentCopyright
+  },
   methods: {
   }
 }
 </script>
 
-<style>
+<style lang="less">
+
+@import "../../assets/normalize.css";
+@import "../../assets/strawberryicon/style.css";
+
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  font-family: "Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","微软雅黑",Arial,sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
 }
+
 </style>

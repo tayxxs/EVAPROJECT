@@ -1,0 +1,19 @@
+# set server port
+server:
+  port: 8080  # 配置端口
+
+spring:
+  datasource: # set database config
+    url: jdbc:mysql://localhost:3306/eva?serverTimezone=GMT
+    username: reid
+    password: reid
+  jpa: # set jpa
+    database: MYSQL # specify ths DBMS
+    show-sql: true # show or not log for each sql query
+    hibernate:
+      ddl-auto: update # Hibernate ddl auto(create, create-drop, update)
+    properties:
+      hibernate: # stripped before adding them to entity manager
+        dialect: org.hibernate.dialect.MySQL5Dialect
+  aop: #设置aop,aop依赖添加后默认是启用的
+    proxy-target-class: true
